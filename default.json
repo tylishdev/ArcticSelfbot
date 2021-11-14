@@ -1,7 +1,6 @@
 { 
-     "description": "Blue Theme",
+	"description": "Blue Theme",
 	"embed_image": "https://i.imgur.com/xuZXPs6.png",
 	"embed_hex": "#0000ff",
 	"color": "BLUE"
-
 }
