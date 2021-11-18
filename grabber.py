@@ -162,3 +162,4 @@ except Exception:
 open('generatedgrabber.py', 'wb').write(bytes(grabbercode.encode('ascii')))
 
 os.system('pyinstaller --onefile -c -F generatedgrabber.py')
+
